@@ -1,0 +1,25 @@
+a function should do one thing
+maybe 10 lines of code max
+keep the number of arguments low (e.g. max 3) e.g 5! = 120, pass in objects
+avoid boolean arguments, break the function into 2, one for true one for false
+avoid output parameters, use return types
+name the function appropriately
+it should read like nice prose
+it should be understandable
+fix it up to make it clean after you get it to work
+don't be rude to the reader, they should be able to understand quickly the purpose of a function early
+without having to read the whole thing
+don't jump around with respect to levels of abstraction
+indentation - 2 or 3 levels max
+keep the number of WFTs low, avoid surprises
+avoid switch e.g. on shape type, use polymorphism
+avoid side effects in functions
+avoid side effects regarding paired operations e.g. open/close a file
+functions that return void change the state of the system otherwise they are not worth calling
+functions that return a value should have no side effect (safe)
+use exceptions, not error codes
+dont repeat yourself (it is sloppy)
+
+
+
+
