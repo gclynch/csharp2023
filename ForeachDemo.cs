@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace Animal;
 
 class Dog
@@ -23,7 +20,7 @@ public static class Litter
         Dog[] dogs = { new Dog("Pluto"), new Dog("Snoop"), new Dog("Scooby") };
 
         // create new generic collection
-        List<Dog> litter = new List<Dog>(dogs);
+        List<Dog> litter = new(dogs);
 
         // collection must be enumerable (which generics are)
         foreach (Dog d in litter)

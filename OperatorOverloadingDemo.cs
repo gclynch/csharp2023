@@ -46,30 +46,19 @@ public struct Time
 
 
     // read only properties
-    public int Hours
-    {
-        get => hours;
-    }
-
-    public int Minutes
-    {
-        get => minutes;
-    }
-
-    public int Seconds
-    {
-        get => seconds;
-    }
+    public int Hours => hours;
+    public int Minutes => minutes;
+    public int Seconds => seconds;
 
     // parse a integer containing a quantity of seconds to hours, minutes, and seconds
     public static Time Parse(int totalSeconds)
     {
-        int hours = totalSeconds / (60 * 60);
-        totalSeconds -= hours * 60 * 60;
-        int minutes = totalSeconds / 60;
-        int seconds = totalSeconds - (minutes * 60);
+        int hrs = totalSeconds / (60 * 60);
+        totalSeconds -= hrs * 60 * 60;
+        int mins = totalSeconds / 60;
+        int secs = totalSeconds - (mins * 60);
 
-        return new Time(hours, minutes, seconds);
+        return new Time(hrs, mins, secs);
     }
 
     // overload + operator

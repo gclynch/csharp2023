@@ -1,4 +1,4 @@
-// C# 10 and .Net 6, VS 2022 or VS Code
+// C# 11 and .Net 7, VS 2022 or VS Code
 
 // an assembly application (.exe), not a library (.dll)
 // assemblies are applications or libraries
@@ -13,7 +13,7 @@ static class HelloWorld				        // : System.Object, internal is default (with
     private static void Main()			        // access modifier can be anything
     {
 
-        const string message = "Hello there C# 10 and .NET 6 !";
+        const string message = "Hello there C# 11 and .NET 7 !";
 
         // alias for System.String, a reference type (on the heap)
 

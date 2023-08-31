@@ -1,4 +1,3 @@
-using System;
 namespace Arithmetic;
 static class SafeDivision
 {

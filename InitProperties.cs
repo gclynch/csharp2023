@@ -1,6 +1,7 @@
 // demo of init only properties - can be set using object initialiser
+// also required properties
+// also global usings in C# 10, and impicit usings based on project type
 
-using System;                           // also global usings in C# 10, and impicit usings based on project type
 namespace Human;
 
 // this is an example of an immutable class - cannot change state once constructed
@@ -8,10 +9,10 @@ namespace Human;
 public class Person
 {
     // init only auto property
-    public string? Name { get; init; }
+    required public string Name { get; init; }
 
     private DateTime dob;
-    public DateTime Dob
+    required public DateTime Dob
     {
         get => this.dob;
         init
@@ -26,7 +27,6 @@ public class Person
             }
         }
     }
-
     public override string ToString()
     {
         return $"{Name} {Dob.ToShortDateString()}";

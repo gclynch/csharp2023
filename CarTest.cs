@@ -16,7 +16,7 @@ static class CarTest
     public static void Main()
     {
         // constructor needs to be public, internal no good, different assembly
-        Car c = new Car("Mazerati", "Ghibli", registration: "222 MH 202");		// Garage.Car....
+        Car c = new Car("Mazerati", "Ghibli", registration: "231 MH 1");		// Garage.Car....
 
         Console.WriteLine(c);                                   // c.ToString()
 

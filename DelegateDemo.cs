@@ -7,7 +7,7 @@ delegate string GreetingDelegate();			// a delegate referring to a method which 
 
 class Person
 {
-    string? Name { get; set; }
+    required string Name { get; set; }
 
     // method which adheres to GreetingDelegate definition
     public string SayHello()

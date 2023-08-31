@@ -8,9 +8,8 @@ namespace Animal;
 public class Dog
 {
     // 2 auto properties
-    public string? Name { get; set; }
-    public string? Breed { get; set; }
-
+    public required string Name { get; set; }
+    public required string Breed { get; set; }
     public override string ToString() => $"{Name} is a {Breed}";
 }
 

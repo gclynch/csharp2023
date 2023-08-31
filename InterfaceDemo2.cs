@@ -1,6 +1,5 @@
 // demo of interfaces - part 2
 
-using System;
 using Geometry;
 
 // polymorphic reference of interface type
@@ -14,16 +13,14 @@ Console.WriteLine(c.Color);                             // can't call Draw on c
 
 namespace Geometry
 {
-
     public interface IDrawable
     {
         void Draw();
     }
     public interface IHasColor
     {
-        String? Color { get; set; }
+        string Color { get; set; }
     }
-
 
     // Circle has a color and origin (x, y) coordinates
     class ColoredCircle : IHasColor, IDrawable
@@ -31,7 +28,6 @@ namespace Geometry
         // origin
         public int X { get; set; }                 // x coordinate in 2D space
         public int Y { get; set; }                 // y coordinate in 2D space
-
         public int Radius { get; set; }
 
         // implement Color property because of IDraw
@@ -39,6 +35,6 @@ namespace Geometry
             Console.WriteLine($"Drawing a {Color} Circle at ({X}, {Y}), Radius {Radius}");
 
         // implement Color property because of IHasColor, auto property will suffice for now
-        public string? Color { get; set; }
+        public required string Color { get; set; }
     }
 }

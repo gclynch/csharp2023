@@ -1,5 +1,4 @@
 // demo of interfaces - part 1
-using System;
 using Geometry;
 
 Circle c = new Circle { X = 10, Y = 20, Radius = 10 };

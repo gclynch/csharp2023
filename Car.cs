@@ -5,7 +5,7 @@ using System;
 
 namespace Garage									                    // sort of like a Java package
 {
-    public class Car : Object						                    // i.e. System.Object, internal default
+    public class Car 						                            // i.e. System.Object, internal default
     {
         private readonly string make, model, registration;			    // fields (member vars in Java)
 

@@ -14,13 +14,13 @@ namespace NullableReferenceTypes
         {
             string nonNullable = null;                                                      // warning
             string? nullable = null;                                                        // no warning
-            Person p = new Person() { Dob = new DateTime(1, 1, 1980) };                     // warning about Name
+            Person p = new Person() { Name = "Fred", Dob = new DateTime(1, 1, 1980) };                     // warning about Name
         }
     }
 
     class Person
     {
-        public string Name { get; set; }                                                    // string? will allow null and stop warning
+        public required string Name { get; set; }                                            
         public DateTime Dob { get; set; }
     }
 }

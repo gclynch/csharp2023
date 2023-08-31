@@ -2,8 +2,8 @@
 // System.Enum is base class for enumerations, enums behave as value types, 
 // System.Enum subclass of System.ValueType
 
-using System;
 using static System.Console;
+
 namespace Enums;
 
 // RGB colors

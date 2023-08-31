@@ -17,10 +17,8 @@ public class Square: Shape
     public double Side { get; set; }
 
     // implement Area calculation for a Square
-    public override double Area
-    {
-        get => Side * Side;
-    }
+    public override double Area => Side * Side;                     // expression bodied read-only property
+    
 
     // default constructor
     public Square(double side)

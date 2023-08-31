@@ -3,7 +3,6 @@
 // collection of Object references, if value types then boxed/unboxed - performance hit
 // dynamic array, Count, Capacity
 
-using System;
 using System.Collections;
 
 namespace Animal;
@@ -11,8 +10,8 @@ namespace Animal;
 public class Dog
 {
     // 2 auto properties
-    public String? Name { get; set; }
-    public String? Breed { get; set; }
+    required public String Name { get; set; }
+    required public String Breed { get; set; }
 
     public override string ToString()
     {

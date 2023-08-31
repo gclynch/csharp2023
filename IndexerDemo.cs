@@ -1,7 +1,5 @@
 // demo of indexers, access an object like an array (using [] syntax)
 
-using System;
-using System.Collections.Generic;
 namespace Media;
 
 // a simple blog
@@ -95,3 +93,4 @@ static class Test
     //		public Customer this[string name]			// in CustomerList class
     //		Customer c = CustomerList["Gary Clynch"]   
 }
+
